@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<zend-config>
+		<plugin>
+
+            <!-- the plugin name [A-Za-z_] -->
+            <pluginName>Shariff</pluginName>
+
+            <!-- a short description -->
+			<pluginDescription><![CDATA[]]></pluginDescription>
+
+            <!-- meta data -->
+            <pluginVersion>1.0</pluginVersion>
+            <pluginRevision>1</pluginRevision>
+            <pluginBuildTimestamp>0</pluginBuildTimestamp>
+
+            <!-- put in the URL for the plugin configuration eg. /plugin/Shariff/admin/index -->
+            <pluginIframeSrc></pluginIframeSrc>
+
+            <!-- className of the plugin which extends Pimcore_API_Plugin_Abstract-->
+			<pluginClassName>\Shariff\Plugin</pluginClassName>
+
+            <!-- include paths relative to plugin-directory -->
+			<pluginIncludePaths>
+				<path>/Shariff/lib</path>
+			</pluginIncludePaths>
+
+			<!-- namespaces to register with autoloader-->
+			<pluginNamespaces>
+				<namespace>Shariff</namespace>
+			</pluginNamespaces>
+
+			<!-- css files with path relative to plugin-directory -->
+			<pluginCssPaths>
+                <path>/plugins/Shariff/static/css/sharif.min.css</path>
+			</pluginCssPaths>
+		</plugin>
+</zend-config>
