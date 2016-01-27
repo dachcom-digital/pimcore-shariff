@@ -1,0 +1,10 @@
+{
+    "cache": {
+        "ttl": 0
+    },
+    "domain": "http://www.dachcom.com",
+    "services": [
+        "GooglePlus",
+        "Facebook"
+    ]
+}
