@@ -16,22 +16,6 @@ class Plugin extends PluginLib\AbstractPlugin implements PluginLib\PluginInterfa
 
         parent::init();
 
-        \Pimcore::getEventManager()->attach("system.startup", function (\Zend_EventManager_Event $e) {
-
-            $autoLoader = \Zend_Loader_Autoloader::getInstance();
-
-            $autoLoader->registerNamespace('Heise');
-
-            $includePaths = array(
-                get_include_path(),
-                PIMCORE_PLUGINS_PATH . '/Shariff/lib/Heise',
-            );
-
-            set_include_path(implode(PATH_SEPARATOR, $includePaths) . PATH_SEPARATOR);
-
-
-        });
-
     }
 
     public static function needsReloadAfterInstall() {
@@ -61,6 +45,10 @@ class Plugin extends PluginLib\AbstractPlugin implements PluginLib\PluginInterfa
 
 	}
 
+    /**
+     * @fixme!
+     * @return bool
+     */
     private static function hasToolBoxPlugin() {
 
         return true;

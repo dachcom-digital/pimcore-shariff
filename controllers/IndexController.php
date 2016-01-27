@@ -7,7 +7,6 @@ class Shariff_IndexController extends \Pimcore\Controller\Action\Admin {
     
     public function indexAction (  ) {
 
-        // reachable via http://your.domain/plugin/Shariff/index/index
        // header('Content-type: application/json');
 
         $url =  $this->getParam('url');
@@ -20,7 +19,7 @@ class Shariff_IndexController extends \Pimcore\Controller\Action\Admin {
         }
 
         $options = [
-            "domain"   => "www.heise.de",
+            "domain"   => "www.dachcom.com",
             "cache"    => ["ttl" => 1],
             "services" => ["Facebook", "GooglePlus", "LinkedIn", "Reddit", "StumbleUpon", "Flattr", "Pinterest", "AddThis"]
         ];

@@ -15,11 +15,10 @@ class Frontend extends \Zend_Controller_Plugin_Abstract {
             return;
         }
 
-        $renderer = \Zend_Controller_Action_HelperBroker::getExistingHelper('ViewRenderer');
-        $renderer->initView();
+        $view = \Zend_Controller_Action_HelperBroker::getStaticHelper('ViewRenderer')->view;
 
-        $renderer->view->footFile()->appendScript('plugin-shariff', '/website/static/js/vendor/shariff/shariff.min.js');
-        $renderer->view->footFile()->appendStylesheet('plugin-shariff-css', '/website/static/js/vendor/shariff/shariff.min.css');
+        $view->footFile()->appendScript('plugin-shariff', '/website/static/js/vendor/shariff/shariff.min.js');
+        $view->footFile()->appendStylesheet('plugin-shariff-css', '/website/static/js/vendor/shariff/shariff.min.css');
 
         $this->initialized = true;
 

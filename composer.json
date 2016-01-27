@@ -17,7 +17,6 @@
     }
   ],
   "require": {
-      "pimcore/installer-plugin": ">=1",
-      "guzzlehttp/guzzle": "~6.1"
+      "heise/shariff": "~4.0"
   }
 }
