@@ -1,5 +1,5 @@
 {
-  "name": "dachcom-digital/pimcore-shariff",
+  "name": "dachcom-digital/shariff",
   "type": "pimcore-plugin",
   "license": "Simple BSD",
   "description": "Shariff for Pimcore.",
