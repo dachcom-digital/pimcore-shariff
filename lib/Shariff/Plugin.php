@@ -4,54 +4,66 @@ namespace Shariff;
 
 use Pimcore\API\Plugin as PluginLib;
 
-class Plugin extends PluginLib\AbstractPlugin implements PluginLib\PluginInterface {
-
-    public function preDispatch($e) {
-
+class Plugin extends PluginLib\AbstractPlugin implements PluginLib\PluginInterface
+{
+    /**
+     * @param $e
+     */
+    public function preDispatch($e)
+    {
         $e->getTarget()->registerPlugin(new Controller\Plugin\Frontend());
-
     }
 
-    public function init() {
-
+    /**
+     *
+     */
+    public function init()
+    {
         parent::init();
-
     }
 
-    public static function needsReloadAfterInstall() {
-        return false;
+    /**
+     * @return bool
+     */
+    public static function needsReloadAfterInstall()
+    {
+        return FALSE;
     }
 
-	public static function install (){
-
-        if( !self::hasToolBoxPlugin()) {
+    /**
+     * @return string
+     */
+    public static function install()
+    {
+        if (!self::hasToolBoxPlugin()) {
             return 'Shariff needs the ToolBox Plugin.';
-
         }
 
         return 'Shariff has been installed successfully.';
+    }
 
-	}
-	
-	public static function uninstall (){
+    /**
+     * @return bool
+     */
+    public static function uninstall()
+    {
+        return TRUE;
+    }
 
-        return true;
-
-	}
-
-	public static function isInstalled () {
-
+    /**
+     * @return bool
+     */
+    public static function isInstalled()
+    {
         return self::hasToolBoxPlugin();
-
-	}
+    }
 
     /**
      * @fixme!
      * @return bool
      */
-    private static function hasToolBoxPlugin() {
-
-        return true;
-
+    private static function hasToolBoxPlugin()
+    {
+        return TRUE;
     }
 }
