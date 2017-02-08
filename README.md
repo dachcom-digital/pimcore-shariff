@@ -44,3 +44,7 @@ return [
 ```
 <div class="shariff" data-theme="grey" data-service="['facebook']" data-backend-url="http://yourdomain.org/plugins/Shariff/proxy/listen/" data-url="<?=$this->urlHelper()->homeUrl()?>" data-lang="<?=$this->language?>" class="shariff"></div>
 ```
+
+## Copyright and license
+Copyright: [DACHCOM.DIGITAL](http://dachcom-digital.ch)  
+For licensing details please visit [LICENSE.md](LICENSE.md)  

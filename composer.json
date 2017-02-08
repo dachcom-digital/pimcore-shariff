@@ -1,22 +1,19 @@
 {
-  "name": "dachcom-digital/shariff",
-  "type": "pimcore-plugin",
-  "license": "Simple BSD",
-  "description": "Shariff for Pimcore.",
-  "keywords": [
-    "pimcore",
-    "shariff"
-  ],
-  "homepage": "https://github.com/dachcom-digital/pimcore-shariff",
-  "authors": [
-    {
-      "name": "DACHCOM.DIGITAL Stefan Hagspiel",
-      "email": "shagspiel@dachcom.ch",
-      "homepage": "http://www.dachcom.com/",
-      "role": "Developer"
+    "name": "dachcom-digital/shariff",
+    "type": "pimcore-plugin",
+    "license": "GPL-3.0+",
+    "description": "Pimcore 4.x Shariff Implementation",
+    "keywords": ["pimcore", "shariff"],
+    "homepage": "https://github.com/dachcom-digital/pimcore-shariff",
+    "authors": [
+        {
+            "name": "DACHCOM.DIGITAL Stefan Hagspiel",
+            "email": "shagspiel@dachcom.ch",
+            "homepage": "http://www.dachcom.com/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "heise/shariff": "~4.0"
     }
-  ],
-  "require": {
-      "heise/shariff": "~4.0"
-  }
 }
